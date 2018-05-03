@@ -1,4 +1,9 @@
 module Msgs exposing (..)
 
+import Models exposing (Player)
+import RemoteData exposing (WebData)
+import Navigation exposing (Location)
+
 type Msg
-  = NoOp
+  = OnFetchPlayers (WebData (List Player))
+  | OnLocationChange Location

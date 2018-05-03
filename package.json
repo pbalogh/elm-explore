@@ -7,7 +7,7 @@
     "scripts": {
         "test": "elm-verify-examples && elm-test",
         "start": "npm run dev",
-        "dev": "webpack-dev-server --hot --port 3000 --colors",
+        "dev": "webpack-dev-server --hot --port 5000 --colors",
         "build": "webpack",
         "prod": "webpack -p",
         "postinstall": "elm-package install -y && elm-test init"
@@ -43,6 +43,8 @@
     },
     "dependencies": {
         "bootstrap": "4.0.0",
+        "bootstrap-sass": "^3.3.7",
+        "font-awesome": "^4.7.0",
         "json-server": "^0.12.2",
         "loglevel": "^1.6.1"
     }
